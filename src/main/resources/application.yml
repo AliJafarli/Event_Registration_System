@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/event_registration
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+    open-in-view: false
+  flyway:
+    enabled: true
+
+app:
+  jwt:
+    secret: "u1vB8G6zvY1xB5K2hQ9o0E3Ybq3xgJw1xv1zqz+FQ3w="
+    issuer: "event-registration-system"
+    access-token-minutes: 60
+  seed-admin:
+    enabled: true
+    email: "admin@example.com"
+    password: "Admin123!"
+    full-name: "System Admin"
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
