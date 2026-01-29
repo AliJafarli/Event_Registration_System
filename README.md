@@ -43,5 +43,6 @@ Swagger UI: http://localhost:8080/swagger-ui.html
 - PUT `/api/admin/events/{id}`
 - PATCH `/api/admin/events/{id}/status`
 - GET `/api/admin/events/{id}/registrations`
+- DELETE `/api/admin/registrations/{registrationId}`
 - DELETE `/api/admin/events/{id}`  (marks CANCELLED)
 
