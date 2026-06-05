@@ -1,4 +1,4 @@
-# Event Registration System (Spring Boot + PostgreSQL + JWT)
+ # Event Registration System (Spring Boot + PostgreSQL + JWT)
 
 A ready-to-run backend project for an Event Registration System.
 
